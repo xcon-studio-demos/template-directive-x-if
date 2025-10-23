@@ -1,0 +1,55 @@
+<div class="xcon-flex xcon-flex-col xcon-gap-lg">
+    <h2 class="xcon-h2 xcon-mb-lg">x:if Binding Example</h2>
+
+    <div class="xcon-flex xcon-flex-col xcon-gap-sm xcon-mb-xl">
+        <label class="xcon-checkbox xcon-checkbox-primary">
+            <input type="checkbox" x:model="showBox1" />
+            <span>Blue Box</span>
+        </label>
+
+        <label class="xcon-checkbox xcon-checkbox-success">
+            <input type="checkbox" x:model="showBox2" />
+            <span>Green Box</span>
+        </label>
+
+        <label class="xcon-checkbox xcon-checkbox-warning">
+            <input type="checkbox" x:model="showBox3" />
+            <span>Yellow Box</span>
+        </label>
+
+        <label class="xcon-checkbox xcon-checkbox-danger">
+            <input type="checkbox" x:model="showBox4" />
+            <span>Red Box</span>
+        </label>
+    </div>
+
+    <div class="xcon-flex xcon-flex-col xcon-gap-md">
+        <div class="xcon-surface-elevated xcon-border-left xcon-border-4 xcon-border-primary"
+             x:if="showBox1">
+            <p class="xcon-text-base xcon-text-primary xcon-m-0">
+                This box appears when the 1st checkbox is checked.
+            </p>
+        </div>
+
+        <div class="xcon-surface-elevated xcon-border-left xcon-border-4 xcon-border-success"
+             x:if="showBox2">
+            <p class="xcon-text-base xcon-text-primary xcon-m-0">
+                This box appears when the 2nd checkbox is checked.
+            </p>
+        </div>
+
+        <div class="xcon-surface-elevated xcon-border-left xcon-border-4 xcon-border-warning"
+             x:if="showBox3">
+            <p class="xcon-text-base xcon-text-primary xcon-m-0">
+                This box appears when the 3rd checkbox is checked.
+            </p>
+        </div>
+
+        <div class="xcon-surface-elevated xcon-border-left xcon-border-4 xcon-border-danger"
+             x:if="showBox4">
+            <p class="xcon-text-base xcon-text-primary xcon-m-0">
+                This box appears when the 4th checkbox is checked.
+            </p>
+        </div>
+    </div>
+</div>
